@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div id="undangan">
+        <header>
+            <h1>The Wedding Of</h1>
+            <h2>Nama Mempelai & Pasangan</h2>
+            <p>Kami berharap Anda menjadi bagian dari hari istimewa kami.</p>
+        </header>
+
+        <section id="mempelai">
+            <div class="mempelai-info">
+                <h3>Nama Mempelai Pria</h3>
+                <p>Putra dari Bapak [Nama Ayah Pria] & Ibu [Nama Ibu Pria]</p>
+            </div>
+            <div class="mempelai-info">
+                <h3>Nama Mempelai Wanita</h3>
+                <p>Putri dari Bapak [Nama Ayah Wanita] & Ibu [Nama Ibu Wanita]</p>
+            </div>
+        </section>
+
+        <section id="acara">
+            <h2>Akad Nikah</h2>
+            <p><strong>Hari/Tanggal:</strong> Minggu, 1 Januari 2025</p>
+            <p><strong>Waktu:</strong> 09:00 - 10:00 WIB</p>
+            <p><strong>Tempat:</strong> Gedung Pernikahan, Jakarta</p>
+
+            <h2>Resepsi</h2>
+            <p><strong>Hari/Tanggal:</strong> Minggu, 1 Januari 2025</p>
+            <p><strong>Waktu:</strong> 11:00 - 14:00 WIB</p>
+            <p><strong>Tempat:</strong> Gedung Pernikahan, Jakarta</p>
+        </section>
+
+        <section id="galeri">
+            <h2>Galeri Foto</h2>
+            <div class="galeri-container">
+                <img src="images/gallery-1.jpg" alt="Foto 1">
+                <img src="images/gallery-2.jpg" alt="Foto 2">
+                <img src="images/gallery-3.jpg" alt="Foto 3">
+                <img src="images/gallery-4.jpg" alt="Foto 4">
+                <img src="images/gallery-5.jpg" alt="Foto 5">
+                <img src="images/gallery-6.jpg" alt="Foto 6">
+            </div>
+        </section>
+
+        <section id="ucapan">
+            <h2>Buku Tamu & Ucapan</h2>
+            <form id="ucapanForm">
+                <input type="text" id="namaPengirim" placeholder="Nama Anda" required>
+                <textarea id="isiUcapan" placeholder="Tulis ucapan Anda" required></textarea>
+                <button type="submit">Kirim Ucapan</button>
+            </form>
+            <div id="daftarUcapan" class="ucapan-list">
+                <!-- Ucapan akan muncul di sini -->
+            </div>
+        </section>
+
+        <footer>
+            <p>Terima kasih atas kehadiran dan doa restu Anda.</p>
+            <p>Nama Mempelai & Pasangan</p>
+        </footer>
+    </div>
+
+    <nav id="bottom-nav">
+        <a href="#mempelai">
+            <i class="fas fa-heart"></i>
+            <span>Mempelai</span>
+        </a>
+        <a href="#acara">
+            <i class="fas fa-calendar-check"></i>
+            <span>Acara</span>
+        </a>
+        <a href="#galeri">
+            <i class="fas fa-images"></i>
+            <span>Galeri</span>
+        </a>
+        <a href="#ucapan">
+            <i class="fas fa-book-open"></i>
+            <span>Ucapan</span>
+        </a>
+    </nav>
+
+    <audio id="backgroundMusic" loop>
+        <source src="nashed.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="menu.js"></script>
+</body>
+</html> 
